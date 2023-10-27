@@ -12,17 +12,17 @@
     <title><%= TituloDeArchivo %></title>
   </head>
   <body>
-    <div class="container">
+    <div class="container" >
       <br /><br />
       <div class="card" style="width: 38rem">
         <div class="card-body">
-          <h4 class="card-title"><%= titulo %></h4>
+          <h4  class="card-title"><%= titulo %></h4>
           <h6 class="card-subtitle mb-2 text-muted"><%= subtitulo %></h6>
           <p class="card-text"><%= contenido %></p>
-          <% if (numero>1) { %>
-          <p>ES MAYOR QUE 1</p>
+          <% if (usuario==true) { %>
+            <button>Ingresar</button>
           <% } else {%>
-          <P>ES MENOR</P>
+          <P>NO ES USUARIO REGISTRADO</P>
           <%} %>
         </div>
       </div>
